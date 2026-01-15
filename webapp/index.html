@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>AI Assistant Settings</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="greeting">
+                <span class="wave">👋</span>
+                <h1>Привет, <span id="username">Пользователь</span>!</h1>
+            </div>
+            <div class="balance-card">
+                <div class="balance-icon">⭐</div>
+                <div class="balance-info">
+                    <span class="balance-label">Ваш баланс</span>
+                    <span class="balance-value" id="balance">0 Stars</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Model Selection Section -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="section-icon">🤖</span>
+                Выбор модели
+            </h2>
+            <div class="models-grid">
+                <label class="model-card" data-model="flash">
+                    <input type="radio" name="model" value="gemini-flash" checked>
+                    <div class="model-content">
+                        <div class="model-header">
+                            <span class="model-icon">⚡</span>
+                            <span class="model-badge free">Бесплатно</span>
+                        </div>
+                        <h3 class="model-name">Gemini Flash</h3>
+                        <p class="model-desc">Быстрые ответы для повседневных задач</p>
+                        <div class="model-check">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                <path d="M8 12l3 3 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </label>
+
+                <label class="model-card" data-model="pro">
+                    <input type="radio" name="model" value="gemini-pro">
+                    <div class="model-content">
+                        <div class="model-header">
+                            <span class="model-icon">💎</span>
+                            <span class="model-badge premium">Премиум</span>
+                        </div>
+                        <h3 class="model-name">Gemini Pro</h3>
+                        <p class="model-desc">Продвинутый анализ и сложные задачи</p>
+                        <div class="model-check">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                <path d="M8 12l3 3 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </section>
+
+        <!-- Subscription Section -->
+        <section class="section">
+            <h2 class="section-title">
+                <span class="section-icon">✨</span>
+                Подписка
+            </h2>
+            <div class="subscription-card">
+                <div class="subscription-content">
+                    <div class="subscription-info">
+                        <h3>Premium доступ</h3>
+                        <p>Разблокируйте Gemini Pro и получите улучшенные возможности AI</p>
+                        <ul class="features-list">
+                            <li>🚀 Приоритетная обработка</li>
+                            <li>🧠 Продвинутый анализ</li>
+                            <li>📊 Расширенные ответы</li>
+                        </ul>
+                    </div>
+                    <button class="buy-button" id="buyPremium">
+                        <span class="buy-icon">⭐</span>
+                        <span class="buy-text">
+                            <span class="buy-label">Купить Premium</span>
+                            <span class="buy-price">150 Stars</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Save Button -->
+    <div class="footer">
+        <button class="save-button" id="saveButton">
+            <span>Сохранить</span>
+            <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                <path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
