@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>NeuroTelega - Настройки</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚙️ Настройки</h1>
+            <p class="subtitle">Выберите модель нейросети</p>
+        </header>
+
+        <section class="models-section">
+            <div class="section-title">
+                <span class="icon">⚡</span>
+                <span>Бесплатные модели</span>
+            </div>
+            
+            <div class="model-card" data-model="gem-2.5-fl">
+                <div class="model-info">
+                    <div class="model-name">Gemini 2.5 Flash-Lite</div>
+                    <div class="model-desc">Самая быстрая модель</div>
+                </div>
+                <div class="model-check"></div>
+            </div>
+            
+            <div class="model-card" data-model="gem-2.5-f">
+                <div class="model-info">
+                    <div class="model-name">Gemini 2.5 Flash</div>
+                    <div class="model-desc">Баланс скорости и качества</div>
+                </div>
+                <div class="model-check"></div>
+            </div>
+        </section>
+
+        <section class="models-section premium-section">
+            <div class="section-title">
+                <span class="icon">✨</span>
+                <span>Premium модели</span>
+                <span class="premium-badge">PRO</span>
+            </div>
+            
+            <div class="model-card premium" data-model="gem-2.5-p">
+                <div class="model-info">
+                    <div class="model-name">Gemini 2.5 Pro</div>
+                    <div class="model-desc">Продвинутая модель</div>
+                </div>
+                <div class="model-check"></div>
+            </div>
+            
+            <div class="model-card premium" data-model="gem-3-f">
+                <div class="model-info">
+                    <div class="model-name">Gemini 3 Flash</div>
+                    <div class="model-desc">Новейшая быстрая модель</div>
+                </div>
+                <div class="model-check"></div>
+            </div>
+            
+            <div class="model-card premium" data-model="gem-3-p">
+                <div class="model-info">
+                    <div class="model-name">Gemini 3 Pro</div>
+                    <div class="model-desc">Самая мощная модель</div>
+                </div>
+                <div class="model-check"></div>
+            </div>
+        </section>
+
+        <div class="info-block">
+            <span class="info-icon">ℹ️</span>
+            <span>Premium модели требуют подписки</span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
